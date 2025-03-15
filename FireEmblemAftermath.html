@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Emblem: Aftermath - Beta Sign-Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: white;
+            margin: 30px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .raffle-message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden-message {
+            display: none;
+        }
+
+        .about, .faq {
+            padding: 20px;
+        }
+
+        .faq {
+            margin-bottom: 60px;
+        }
+
+        .faq ul {
+            list-style-type: none;
+            line-height: 1.6;
+        }
+
+        .faq li {
+            margin-bottom: 20px;
+        }
+
+        .faq li strong {
+            font-size: 1.1em;
+        }
+
+        .faq h2, .about h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fire Emblem: Aftermath - Beta Sign-Up</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#beta">Beta Sign-Up</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="container" id="home">
+        <p class="raffle-message">Congratulations! You've been selected for a chance to play the beta version of the upcoming **Fire Emblem: Aftermath** game. To secure your spot, please complete the sign-up form below:</p>
+        
+        <!-- Fake Sign-Up Form -->
+        <form id="signupForm">
+            <input type="text" id="fullname" placeholder="Full Name" required><br>
+            <input type="email" id="email" placeholder="Email Address" required><br>
+            <input type="password" id="password" placeholder="Create a Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <p class="hidden-message" id="thanksMessage">Thank you for signing up! Please wait while we verify your information...</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+        <h2>About the Game</h2>
+        <p><strong>Fire Emblem: Aftermath</strong> is the latest addition to the iconic Fire Emblem series. The game introduces a fresh storyline, new tactical mechanics, and features that will captivate both long-time fans and newcomers alike.</p>
+        <p>The game is currently in beta, allowing select players to test out new features and provide feedback to help make the game even better before its full release. Get ready for intense strategy and epic battles in **Fire Emblem: Aftermath**.</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>What is the Fire Emblem: Aftermath Beta?</strong> The beta version of **Fire Emblem: Aftermath** offers an exclusive opportunity for players to test new features and provide valuable feedback before the official release.</li>
+            <li><strong>How do I sign up?</strong> Simply fill out the sign-up form with your name, email address, and password. You'll be entered into the raffle for a chance to participate.</li>
+            <li><strong>Is the Beta Free?</strong> Yes, the beta is free to participate in. All you need is a valid email address to sign up.</li>
+            <li><strong>How will I know if I’ve been selected?</strong> If you are selected, you will receive an email with instructions on how to access the beta version of the game.</li>
+            <li><strong>Can I share the Beta with my friends?</strong> No, the beta is exclusive to selected players only. Sharing it with others is prohibited.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nintendo Co., Ltd. All Rights Reserved. **Fire Emblem** is a registered trademark of Nintendo.</p>
+        <p><a href="https://www.nintendo.com">Visit Nintendo</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            // Hide the sign-up form and show a thank you message
+            document.querySelector(".raffle-message").style.display = "none";
+            document.getElementById("signupForm").style.display = "none";
+            document.getElementById("thanksMessage").style.display = "block";
+
+            // Simulate a verification process before showing the NSFW pop-ups
+            setTimeout(function() {
+                // Once "verified", display the pop-ups
+                openNSFWWarningWindows();
+            }, 3000); // Wait 3 seconds before showing the warning
+        });
+
+        function openNSFWWarningWindows() {
+            // Create 5 "NSFW content detected" warning pop-ups
+            for (let i = 0; i < 5; i++) {
+                let warningWindow = window.open("", "NSFWWarning" + i, "width=400,height=200,resizable=yes,scrollbars=yes");
+                warningWindow.document.write("<html><head><title>Warning: NSFW Content Detected</title></head><body style='background-color: black; color: red; font-family: Arial, sans-serif; text-align: center; padding: 50px;'>");
+                warningWindow.document.write("<h1>WARNING</h1><p><strong>NSFW Content Detected!</strong></p>");
+                warningWindow.document.write("<p><strong>Action Required:</strong> Immediate Review of Your Content is Required.</p>");
+                warningWindow.document.write("<p><strong>Reason:</strong> Inappropriate Content Detected.</p>");
+                warningWindow.document.write("<p><strong>Error Code:</strong> 0xDETECTEDNSFW</p>");
+                warningWindow.document.write("<p>Your account is at risk. Please check your recent activity.</p>");
+                warningWindow.document.write("<p>Close the browser to prevent further issues.</p>");
+                warningWindow.document.write("</body></html>");
+            }
+        }
+    </script>
+
+</body>
+</html>
+ss
